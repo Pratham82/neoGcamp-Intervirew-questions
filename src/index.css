@@ -75,3 +75,42 @@ code {
   border: 0.15px solid grey;
   border-radius: 15px;
 }
+
+.loadingTemplate {
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 8px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 8px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 8px -3px rgba(0, 0, 0, 0.75);
+}
+
+.loading {
+  background-color: rgb(94, 245, 94);
+  color: black;
+  /* font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 8px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 8px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 8px -3px rgba(0, 0, 0, 0.75); */
+}
+.loaded {
+  background-color: red;
+  color: white;
+  /* font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 8px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 8px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 8px -3px rgba(0, 0, 0, 0.75); */
+}
