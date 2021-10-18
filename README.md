@@ -2,4 +2,4 @@
 
 ## [Solutions 💎](https://github.com/Pratham82/neoGcamp-Intervirew-questions/tree/master/src/pages/interview-questions)
 
-## 🚧 WIP
+## 🚧 Work in progress
