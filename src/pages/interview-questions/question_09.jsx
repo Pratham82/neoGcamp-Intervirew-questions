@@ -6,7 +6,7 @@ const questionText =
   '09. Create a password checker web app. If password is lesser than 10 characters then show an error to user otherwise show success. Someone can ask to make the submit button disabled. Some can ask to make the input field green or red depending on input.'
 
 const QuestionNine = () => {
-  const [password, setPassword] = useState('')
+  const [passwordVal, setPassword] = useState('')
   const [toolTip, setToolTip] = useState(false)
   const handleChange = e => {
     e.preventDefault()
@@ -28,7 +28,7 @@ const QuestionNine = () => {
         className="inputStyles"
         type="password"
         onChange={handleChange}
-        value={password}
+        value={passwordVal}
       />
       <span
         className="password-toolTip"
@@ -49,9 +49,9 @@ const QuestionNine = () => {
       </div>
 
       <h3>Entered password:</h3>
-      <p>{password}</p>
+      <p>{passwordVal}</p>
       <button
-        className={`submit-btn${password.length > 6 ? '' : '-disabled'}`}
+        className={`submit-btn${passwordVal.length >= 10 ? '' : '-disabled'}`}
         onClick={handleClick}
       >
         SUBMIT
