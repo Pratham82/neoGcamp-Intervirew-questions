@@ -5,12 +5,13 @@ import './index.css'
 // import QuestionFour from './pages/interview-questions/question_04'
 // import QuestionSix from './pages/interview-questions/question_06'
 // import QuestionSeven from './pages/interview-questions/question_07'
-import QuestionEight from './pages/interview-questions/question_08'
+// import QuestionEight from './pages/interview-questions/question_08'
+import QuestionNine from './pages/interview-questions/question_09'
 
 function App() {
   return (
     <div className="App">
-      <QuestionEight />
+      <QuestionNine />
     </div>
   )
 }
