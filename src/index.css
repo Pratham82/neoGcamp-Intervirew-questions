@@ -15,6 +15,16 @@ code {
 .App {
   text-align: center;
 }
+.topBar {
+  background-color: #49a0eb;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+
+.appContainer {
+  display: flex;
+}
 
 .App-logo {
   height: 40vmin;
@@ -280,4 +290,29 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Side bar*/
+.sidebarContainer {
+  display: flex;
+  background-color: rgb(226, 220, 220);
+  padding-right: 20px;
+  height: 100vh;
+}
+
+.contentHidden {
+  display: none;
+}
+
+.contentVisible {
+  display: block;
+  width: 15vw;
+  /* background-color: red; */
+}
+
+.hamburgerBtn {
+  background-color: white;
+  border: none;
+  margin: 20px 10px;
+  cursor: pointer;
 }
