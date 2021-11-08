@@ -5,7 +5,7 @@ import '../../index.css'
 const questionText =
   '09. Create a password checker web app. If password is lesser than 10 characters then show an error to user otherwise show success. Someone can ask to make the submit button disabled. Some can ask to make the input field green or red depending on input.'
 
-const QuestionNine = () => {
+const Question9 = () => {
   const [passwordVal, setPassword] = useState('')
   const [toolTip, setToolTip] = useState(false)
   const handleChange = e => {
@@ -24,7 +24,6 @@ const QuestionNine = () => {
       <QuestionHeader questionText={questionText} />
       <label htmlFor="password">Enter Password*</label>
       <input
-        type="text"
         className="inputStyles"
         type="password"
         onChange={handleChange}
@@ -60,4 +59,4 @@ const QuestionNine = () => {
   )
 }
 
-export default QuestionNine
+export default Question9

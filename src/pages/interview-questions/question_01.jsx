@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import QuestionHeader from '../../components/question-header'
 import '../../index.css'
 
-const QuestionOne = () => {
+const Question1 = () => {
   const [input1, setInput1] = useState('')
   const [input2, setInput2] = useState('')
   const [result, setResult] = useState()
@@ -61,4 +61,4 @@ const QuestionOne = () => {
   )
 }
 
-export default QuestionOne
+export default Question1

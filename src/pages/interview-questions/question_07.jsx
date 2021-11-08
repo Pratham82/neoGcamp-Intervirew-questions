@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import QuestionHeader from '../../components/question-header'
 import '../../index.css'
-const QuestionSeven = () => {
+const Question7 = () => {
   const POSTS_API_URL = 'https://jsonplaceholder.typicode.com/posts'
   const questionText =
     "7. Here's an API. Create a web app to call this API with your full name and print the response. This could be extended where we ask you to do something with the response. Like add a text, or capitalize etc."
@@ -10,7 +10,7 @@ const QuestionSeven = () => {
   useEffect(() => {
     // Fetch data
     const fetchData = async () => {
-      const res = await fetch(POSTS_API_URL,{
+      const res = await fetch(POSTS_API_URL, {
         method: 'POST',
         headers: {
           'Content-type': 'application/json; charset=UTF-8',
@@ -18,14 +18,14 @@ const QuestionSeven = () => {
         body: JSON.stringify({
           title: 'New title 101',
           body: 'This is the new title body',
-          userId: 101
-        })
+          userId: 101,
+        }),
       })
-      const newPostData =  await res.json()
-      const {title} = newPostData
+      const newPostData = await res.json()
+      const { title } = newPostData
       setCurrentPost(title)
-      console.log('Original Title: ', title);
-      console.log('Modified Title: ', title.toUpperCase());
+      console.log('Original Title: ', title)
+      console.log('Modified Title: ', title.toUpperCase())
     }
     fetchData()
   }, [])
@@ -38,4 +38,4 @@ const QuestionSeven = () => {
   )
 }
 
-export default QuestionSeven
+export default Question7

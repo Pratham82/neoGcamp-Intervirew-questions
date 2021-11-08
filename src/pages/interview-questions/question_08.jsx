@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import QuestionHeader from '../../components/question-header'
 import '../../index.css'
-const QuestionEight = () => {
+const Question8 = () => {
   const POSTS_API_URL = 'https://jsonplaceholder.typicode.com/postssdf'
   const questionText =
     "8. Here's an API. It will give an error. Write a web app, call this API and read the error message. Show user the error message."
@@ -17,12 +17,12 @@ const QuestionEight = () => {
       // setData(posts.slice(0,10));
       // console.log(response);
       // console.log(serverResponse);
-      const {url, ok, status} = response
-      setServerResponse({url, ok, status})
+      const { url, ok, status } = response
+      setServerResponse({ url, ok, status })
     }
     fetchData()
   }, [])
-  const {url, ok, status} = serverResponse;
+  const { url, ok, status } = serverResponse
 
   return (
     <React.Fragment>
@@ -31,11 +31,17 @@ const QuestionEight = () => {
       {/* {data.map(post => <React.Fragment key={post.id}>
         <h4>{post.id}. {post.title}</h4>
       </React.Fragment> )} */}
-      <p><b>URL: </b> {url}</p>
-      <p><b>OK: </b> {ok ? 'true' : 'false'}</p>
-      <p><b>Status: </b> {status}</p>
+      <p>
+        <b>URL: </b> {url}
+      </p>
+      <p>
+        <b>OK: </b> {ok ? 'true' : 'false'}
+      </p>
+      <p>
+        <b>Status: </b> {status}
+      </p>
     </React.Fragment>
   )
 }
 
-export default QuestionEight
+export default Question8

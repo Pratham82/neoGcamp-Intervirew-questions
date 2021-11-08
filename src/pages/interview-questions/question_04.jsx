@@ -1,9 +1,8 @@
-
 import React, { useState } from 'react'
 import QuestionHeader from '../../components/question-header'
 import '../../index.css'
 
-const QuestionFour = () => {
+const Question4 = () => {
   const [input, setInput] = useState('')
   const [color, setColor] = useState(16)
   const questionText =
@@ -18,7 +17,6 @@ const QuestionFour = () => {
       : colorVal === 'blue'
       ? setColor('blue')
       : setColor('black')
-
   }
 
   return (
@@ -38,7 +36,7 @@ const QuestionFour = () => {
         <button
           className="colorBtn"
           key={i}
-          style={{color: `${val}`}}
+          style={{ color: `${val}` }}
           disabled={input ? false : true}
           onClick={e => handleClick(e, val)}
         >
@@ -48,11 +46,9 @@ const QuestionFour = () => {
       <p>
         Current color: <b>{}</b>
       </p>
-      <p style={{ color: `${color}` }}>
-        {input}
-      </p>
+      <p style={{ color: `${color}` }}>{input}</p>
     </React.Fragment>
   )
 }
 
-export default QuestionFour
+export default Question4

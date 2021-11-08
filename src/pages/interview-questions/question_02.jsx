@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import QuestionHeader from '../../components/question-header'
 import '../../index.css'
 
-const QuestionTwo = () => {
+const Question2 = () => {
   const [input, setInput] = useState('')
   const [fontSize, setFontSize] = useState(16)
   const questionText =
@@ -44,4 +44,4 @@ const QuestionTwo = () => {
   )
 }
 
-export default QuestionTwo
+export default Question2
