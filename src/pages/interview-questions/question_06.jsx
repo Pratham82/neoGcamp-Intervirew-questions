@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import QuestionHeader from '../../components/question-header'
 import '../../index.css'
 
-const QuestionSix = () => {
+const Question6 = () => {
   const [isLoading, setLoading] = useState(false)
   const questionText =
     '6. Create a web app with a button loaded. Show a text loading... on a web app. However, hide it if I click on the button loaded.'
@@ -22,4 +22,4 @@ const QuestionSix = () => {
   )
 }
 
-export default QuestionSix
+export default Question6
