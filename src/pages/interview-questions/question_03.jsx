@@ -5,7 +5,9 @@ import '../../index.css'
 const Question3 = () => {
   const [input, setInput] = useState('')
   const [fontSize, setFontSize] = useState(16)
+  const [op, setOp] = useState('')
   const [currentTag, setTag] = useState('')
+
   const questionText =
     'Q.3. Create a web app where I can input a text. Now, create three buttons h1, h2, h3. When I click on any of the button, the text should become h1, h2, or h3.'
 
@@ -19,7 +21,19 @@ const Question3 = () => {
       ? setFontSize(20.8)
       : setFontSize(16)
 
-    setTag(instructions)
+    // setTag(instructions)
+
+    setOp(
+      instructions === 'h1' ? (
+        <h1>{input}</h1>
+      ) : 'h2' ? (
+        <h2>{input}</h2>
+      ) : 'h3' ? (
+        <h3>{input}</h3>
+      ) : (
+        <h5>{input}</h5>
+      )
+    )
   }
 
   return (
@@ -48,11 +62,8 @@ const Question3 = () => {
       <p>
         Current font-size: <b>{fontSize}px</b> Current tag: <b>{currentTag}</b>
       </p>
-      <p style={{ fontSize: `${fontSize}px` }}>
-        {currentTag && `<${currentTag && currentTag}>`}
-        {input}
-        {currentTag && `</${currentTag && currentTag}>`}
-      </p>
+      {input}
+      {op}
     </React.Fragment>
   )
 }
